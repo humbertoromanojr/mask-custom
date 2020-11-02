@@ -3,18 +3,25 @@
 import React from 'react';
 import { StyleSheet, TextInput, TextInputProps } from 'react-native';
 
-import { maskCep } from '../utils/mask';
+import { maskCep, maskPhone } from '../utils/mask';
 
 interface InputProps extends TextInputProps {
-  mask: 'cep' | 'prone' | 'currency';
+  mask: 'cep' | 'phone' | 'currency';
   inputMaskChange: any;
 }
 
 const Input = ({ mask, inputMaskChange, ...rest }: InputProps) => {
 
   const handleChange = (text: string) => {
-    const value = maskCep(text);
-    inputMaskChange(value);
+    if (mask === 'cep') {
+      const value = maskCep(text);
+      inputMaskChange(value);
+    }
+
+    if (mask === 'phone') {
+      const value = maskPhone(text);
+      inputMaskChange(value);
+    }
   };
 
   return (
