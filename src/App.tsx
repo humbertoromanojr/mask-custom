@@ -1,12 +1,26 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+/* eslint-disable react-native/no-inline-styles */
+/* eslint-disable prettier/prettier */
+import React, { useState } from 'react';
+import { StatusBar, View } from 'react-native';
 
-// import { Container } from './styles';
+import Input from './components/Input';
 
 const App = () => {
+  const [cep, setCep] = useState('');
+
+  const handleInputCustom = (value: string) => {
+    console.log(value);
+  };
+
   return (
-    <View>
-      <Text>App screen</Text>
+    <View style={{ flex: 1, backgroundColor: '#0c0577', alignItems: 'center', justifyContent: 'center'}}>
+      <StatusBar barStyle="light-content" backgroundColor="#0c0577" />
+
+      <Input
+      mask="cep"
+      value={cep}
+      inputMaskChange={(text: string) => handleInputCustom(text)} />
+
     </View>
   );
 };
