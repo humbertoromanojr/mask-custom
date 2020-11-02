@@ -7,11 +7,11 @@ TEXTINPUT MASK
 
 ![Badge](https://img.shields.io/static/v1?label=reactnative&message=FrameWork&color=blue&style=for-the-badge&logo=REACTNATIVE)
 
-![Badge](https://img.shields.io/github/issues/humbertoromanojr/pokemons?logo=visual-studio-code&style=plastic&logo=appveyor)
-![Badge](https://img.shields.io/github/forks/humbertoromanojr/pokemons)
-![Badge](https://img.shields.io/github/stars/humbertoromanojr/pokemons)
-![Badge](https://img.shields.io/github/license/humbertoromanojr/pokemons)
-![Badge](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fhumbertoromanojr%2Fpokemons)
+![Badge](https://img.shields.io/github/issues/humbertoromanojr/mask-custom?logo=visual-studio-code&style=plastic&logo=appveyor)
+![Badge](https://img.shields.io/github/forks/humbertoromanojr/mask-custom)
+![Badge](https://img.shields.io/github/stars/humbertoromanojr/mask-custom)
+![Badge](https://img.shields.io/github/license/humbertoromanojr/mask-custom)
+![Badge](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fhumbertoromanojr%2Fmask-custom)
 
 ## MOBILE
 - ⚛️ [ReactJS](https://reactjs.org/) — A lib that provides a way to create native apps for Android and iOS 💗
