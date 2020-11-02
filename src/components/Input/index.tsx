@@ -3,7 +3,7 @@
 import React from 'react';
 import { StyleSheet, TextInput, TextInputProps } from 'react-native';
 
-import { maskCep, maskPhone } from '../utils/mask';
+import { maskCep, maskCurrency, maskPhone } from '../utils/mask';
 
 interface InputProps extends TextInputProps {
   mask: 'cep' | 'phone' | 'currency';
@@ -20,6 +20,11 @@ const Input = ({ mask, inputMaskChange, ...rest }: InputProps) => {
 
     if (mask === 'phone') {
       const value = maskPhone(text);
+      inputMaskChange(value);
+    }
+
+    if ( mask === 'currency') {
+      const value = maskCurrency(text);
       inputMaskChange(value);
     }
   };
@@ -40,6 +45,7 @@ export default Input;
 const styles = StyleSheet.create({
   input: {
     backgroundColor: '#ffffff',
+    color: '#0c0577',
     height: 50,
     width: 200,
     borderRadius: 26,
