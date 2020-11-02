@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { StyleSheet, TextInput } from 'react-native';
+import { StyleSheet, TextInput, TextInputProps } from 'react-native';
 
 import { maskCep } from '../utils/mask';
 
-interface InputProps {
+interface InputProps extends TextInputProps {
   mask: 'cep' | 'prone' | 'currency';
   inputMaskChange: any;
 }
