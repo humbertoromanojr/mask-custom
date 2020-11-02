@@ -33,6 +33,10 @@ Para rodar a aplicação
 `npm or yarn android or ios`
 
 
+## Sources
+- [Daniele Leao Evangelista](https://www.youtube.com/watch?v=tKZ8ku8ZnW4&t=1779s)
+
+
 ## Demostration
 <br>
   <img src="https://i.ibb.co/3cxj1vH/text-Input-Mask.png" alt="duas imagens em azul, demostrando três campos que estão com mascaras de entrada" border="0">
